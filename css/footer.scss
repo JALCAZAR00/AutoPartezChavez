@@ -1,0 +1,168 @@
+footer{
+    box-shadow: 0 -2px 5px #808080e1;
+    nav{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        width: 100%;
+        padding: 4px;
+        background: linear-gradient(360deg, #0b3850, #0b3850f3);
+        .social{
+            width: 100%;
+            text-align: center;
+            img{
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                margin: 0 4px;
+            }
+            img:hover{
+                border-radius: .2em;
+                background-image: radial-gradient(#a00a3a 58%, transparent 10%, transparent 40%);
+            }
+            .whatsapp{
+                width: 28px;
+                height: 28px;
+                padding-bottom: 2px;
+            }
+        }
+        .footer-nav{
+            width: 100%;
+            ul{
+                display: flex;
+                justify-content: center;
+                gap: 8px;
+                height: 3vh;
+                font-size: 1.3rem;
+                font-weight: 600;
+                color: white;
+                list-style: none;
+                li:hover{
+                    //margin-bottom: 20px;
+                    font-size: 1.6rem;
+                    font-weight: 800;
+                    color: #a00a3a;
+                    text-shadow: 0 0 5px #dfdfdf;
+                    cursor: pointer;
+                }
+            }
+        }
+        .navs-container{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 12px;
+            .container{
+                position: fixed;
+                bottom: 0;
+                z-index: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                gap: 16px;
+                width: 100%;
+                height: 80vh;
+                padding: 12px 4px;
+                border-radius: .5em;
+                border: 1px solid #808080;
+                backdrop-filter: blur(6px);
+                -webkit-backdrop-filter: blur(55.5px);
+                box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+                background: rgba(153, 153, 153, 0.781);
+                span{
+                    position: absolute;
+                    top: 1vh;
+                    right: 1vw;
+                    display: inline-block;
+                    width: 35px;
+                    height: 35px;
+                    cursor: pointer;
+                    background-image: url('../assets/vectors/close-red.svg');
+                    @include backgroundImage();
+                }
+                div{
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                    img{
+                        width: 20px;
+                        height: 24px;
+                    }
+                    h2{
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                    p{
+                        font-size: 1.4rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .contact{
+                display: none;
+            }
+            .about{
+                display: none;
+                flex-direction: column;
+                gap: 32px;
+                overflow-y: scroll;
+                overscroll-behavior-y: contain;
+                scroll-snap-type: y proximity;
+                div{
+                    flex-direction: column;
+                    text-align: center;
+                    h2{
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                    }
+                    h3{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+            .politics{
+                display: none;
+                gap: 40px;
+                overflow-y: scroll;
+                overscroll-behavior-y: contain;
+                scroll-snap-type: y proximity;
+                padding-top: 100px;
+                div{
+                    flex-direction: column;
+                    text-align: center;
+                    h2{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+            .warranty{
+                display: none;
+                div{
+                    flex-direction: column;
+                    gap: 16px;
+                    text-align: center;
+                    overflow-y: scroll;
+                    overscroll-behavior-y: contain;
+                    scroll-snap-type: y proximity;
+                    h2{
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+        .footer-logo{
+            width: 100%;
+            text-align: center;
+            padding-top: 4px;
+            border-top: 1px solid white;
+            img{
+                width: 50px;
+                height: 35px;
+            }
+            p{
+                font-size: 1.3rem;
+                color: #808080;
+            }
+        }
+    }
+}

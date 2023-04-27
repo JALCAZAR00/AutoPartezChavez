@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="shortcut icon" href="../assets/logos/smalls/Logo AC Color.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu">
+                <img class="menu_icon" src="../assets/vectors/menu-icon.svg" alt="menu-icon">
+            </div>
+            <div class="toggle-menu inactive">
+                <span class="close-menu"></span>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li class="open-category"><a href="#">Catalogo</a><span class="category-arrow"></span></li>
+                    <div id="category" class="inactive">
+                        <ul>
+                            <li><a href="#">Accesorios</a></li> 
+                            <li><a href="#">Aceites y químicos</a></li> 
+                            <li><a href="#">Alternadores y componentes</a></li> 
+                            <li><a href="#">Arneses</a></li> 
+                            <li><a href="#">Baterías</a></li> 
+                            <li><a href="#">Cableado y manguera</a></li> 
+                            <li><a href="#">Filtros </a></li> 
+                            <li><a href="#">Fuel Injection</a></li> 
+                            <li><a href="#">Iluminación</a></li> 
+                            <li><a href="#">Limpiaparabrisas </a></li> 
+                            <li><a href="#">Marchas y componentes</a></li> 
+                            <li><a href="#">Sensores</a></li> 
+                            <li><a href="#">Sistema de ignición</a></li> 
+                            <li><a href="#">Sistema de enfriamiento</a></li> 
+                        </ul>
+                    </div>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Quénes Somos</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+                <section class="footer-menu">
+                    <div class="socials">
+                        <a href="#"><img class="whatsapp" src="../assets/vectors/whatsapp-white.svg" alt="whatsapp-icon"></a>
+                        <a href="#"><img src="../assets/vectors/facebook-white.svg" alt="facebook-icon"></a>
+                        <a href="#"><img src="../assets/vectors/instagram-white.svg" alt="instagram-icon"></a>
+                    </div>
+                    <div class="logo-menu">
+                        <img src="../assets/logos/smalls/Logo AC Blanco.png" alt="logo-white">
+                        <p>&copy; Derechos Reservados Autopartes Chávez</p>
+                    </div>
+                </section>
+            </div>
+            <div class="logo">
+                <a href="../index.html"><img src="../assets/logos/smalls/Logo Autopartes Chavez Color.png" alt="logo" class="logo_img"></a>
+            </div>
+            <div class="navegation">
+                <div class="search">
+                    <img src="../assets/vectors/search-icon.svg" alt="search-icon">
+                    <p>Buscar</p>
+                </div>
+                <div class="cart">
+                    <img src="../assets/vectors/cart-icon.svg" alt="cart-icon">
+                    <span class="count">0</span>
+                    <p>Carrito</p>
+                </div>
+                <div class="store-icon">
+                    <a href="categorias.html"><img src="../assets/vectors/store.svg" alt="store-icon"></a> 
+                    <p>Tienda</p>
+                </div>
+            </div>
+            <div class="cart-products inactive">
+                <div class="header-cart">
+                    <h2>Articulos Seleccionados <span class="close-cart"></span></h2>  
+                </div>
+                <div class="products">
+                </div>
+                <div class="resume">
+                    <div class="subtotal">
+                        <h3>Sub-total:</h3>
+                        <p class="subtotal-precio">$0</p>  
+                    </div>
+                    <div class="delivery">
+                        <h3>Envio:</h3>
+                        <p>$0</p>   
+                    </div>
+                    <div class="total">
+                        <h3>Total:</h3>
+                        <p class="total-precio">$0</p>   
+                    </div>
+                    <button>Comprar</button>
+                </div>
+            </div>  
+            <div class="searchActivate">
+                <label class="searchClose" for="search"></label>
+                <input type="text" name="search" id="search" placeholder="¿Que estas buscando?">
+            </div>          
+        </nav>
+        <div class="list-nav">
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li class="category-desktop"><a href="#">Categorias</a> <span class="category-arrow-Desk"></span></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Quiénes Somos</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div id="categoryDesktop" class="inactive">
+                <ul>
+                    <li><a href="#">Accesorios</a></li> 
+                    <li><a href="#">Aceites y químicos</a></li> 
+                    <li><a href="#">Alternadores y componentes</a></li> 
+                    <li><a href="#">Arneses</a></li> 
+                    <li><a href="#">Baterías</a></li> 
+                    <li><a href="#">Cableado y manguera</a></li> 
+                    <li><a href="#">Filtros </a></li> 
+                    <li><a href="#">Fuel Injection</a></li> 
+                    <li><a href="#">Iluminación</a></li> 
+                    <li><a href="#">Limpiaparabrisas </a></li> 
+                    <li><a href="#">Marchas y componentes</a></li> 
+                    <li><a href="#">Sensores</a></li> 
+                    <li><a href="#">Sistema de ignición</a></li> 
+                    <li><a href="#">Sistema de enfriamiento</a></li> 
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main id="main_tienda">
+        <div class="banner">
+            <img src="../assets/categorias/marcha-publicidad.avif" alt="">
+        </div>
+        <div class="categories">
+            <h1>Categorias</h1>
+            <ul>
+                <li id="accesorios"><a href="/tienda/categorias/accesorios.html"><p>Accesorios</p></a></li> 
+                <li id="aceite"><a href="/tienda/productos.html"><p>Aceites y químicos</p></a></li> 
+                <li id="alternador"><a href="/tienda/productos.html"><p>Alternadores y componentes</p></a></li> 
+                <li id="arnes"><a href="/tienda/productos.html"><p>Arneses</p></a></li> 
+                <li id="bateria"><a href="/tienda/productos.html"><p>Baterías</p></a></li> 
+                <li id="cableado"><a href="/tienda/productos.html"><p>Cableado y manguera</p></a></li> 
+                <li id="filtro"><a href="/tienda/productos.html"><p>Filtros</p></a></li> 
+                <li id="injection"><a href="/tienda/productos.html"><p>Fuel Injection</p></a></li> 
+                <li id="iluminacion"><a href="/tienda/productos.html"><p>Iluminación</p></a></li> 
+                <li id="limpiaparabrisas"><a href="/tienda/productos.html"><p>Limpiaparabrisas</p></a></li> 
+                <li id="marcha"><a href="/tienda/productos.html"><p>Marchas y componentes</p></a></li> 
+                <li id="sensor"><a href="/tienda/productos.html"><p>Sensores</p></a></li> 
+                <li id="ignicion"><a href="/tienda/productos.html"><p>Sistema de ignición</p></a></li> 
+                <li id="enfriamiento"><a href="/tienda/productos.html"><p>Sistema de enfriamiento</p></a></li> 
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <nav>
+            <div class="social">
+                <a href="#"><img class="whatsapp" src="../assets/vectors/whatsapp-white.svg" alt="whatsapp-icon"></a>
+                <a href="#"><img src="../assets/vectors/facebook-white.svg" alt="facebook-icon"></a>
+                <a href="#"><img src="../assets/vectors/instagram-white.svg" alt="instagram-icon"></a>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li id="contact">Contactanos</li>
+                    <li id="about">Acerca de nosotros</li>
+                    <li id="politics">Políticas</li>
+                    <li id="warranty">Garantías</li>
+                </ul>
+                <div class="navs-container">
+                    <div class="container contact">
+                        <span class="close-container"></span>
+                        <div class="location">
+                            <img src="../assets/vectors/location.svg" alt="location-icon">
+                            <h2>Cambridge, London #174</h2>
+                        </div>
+                        <div class="time">
+                            <img src="../assets/vectors/clock.svg" alt="time-icon">
+                            <h2>Lunes a Viernes: 8:00am - 8:00pm, Sábado y Domingo: 8:00am - 2:00pm</h2>
+                        </div>
+                        <div class="telephone">
+                            <img src="../assets/vectors/telephone.svg" alt="telephone-icon">
+                            <h2>+52 012 345 6789</h2>
+                        </div>
+                        <div class="mail">
+                            <img src="../assets/vectors/mail.svg" alt="mail-icon">
+                            <h2>autoparteschvz@hotmail.com</h2>
+                        </div>
+                    </div>
+                    <div class="container about">
+                        <span class="close-about"></span>
+                        <div class="who">
+                            <h2>¿Quiénes somos?</h2>
+                            <p>Somos especialistas en refacciones y accesorios de la industria automotriz.</p>   
+                        </div>
+                        <div class="mision">
+                            <h3>MISIÓN</h3>
+                            <p>Ayudar a mantener en óptimas condiciones los vehículos de nuestros clientes, ofreciendo una amplia gama de productos y servicios automotrices.</p>
+                        </div>
+                        <div class="vision">
+                            <h3>VISIÓN</h3>
+                            <p>Ser una empresa socialmente responsable, líder en soluciones automotrices. Promoviendo el desarrollo y bienestar de nuestros colaboradores y accionistas, a través del crecimiento sustentable de la empresa.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="container politics">
+                        <span class="close-politics"></span>
+                        <div class="terms">
+                            <h2>Términos y condiciones</h2>
+                            <p>Al ingresar y utilizar este sitio web, cuyo nombre de dominio es www.autoparteschavez.com, usted (el usuario) está aceptando los términos y las condiciones abajo descritos y declara expresamente su aceptación, utilizando para tal efecto medios electrónicos, en términos de lo dispuesto en el artículo 1803 del Código Civil Federal.</p>
+                        </div>
+                        <div class="privacity">
+                            <h2>Aviso de privacidad</h2>
+                            <p>Su privacidad y confianza son muy importantes para Auto Partes Chávez, por ello queremos asegurarnos que conozca cómo salvaguardamos la integridad, privacidad y protección de sus datos personales, en apego a la Ley.</p>
+                        </div>
+                        <div class="delivery">
+                            <h2>Envíos y entregas</h2>
+                            <p>autoparteschavez.com se compromete a entregar el producto en perfecto estado en la dirección que el usuario nos proporcione al momento de registrar la compra. Con el fin de optimizar la entrega, agradecemos al usuario indique una dirección en la cual la compra pueda ser entregada dentro de un horario laboral habitual, es decir entre las 9:00 hrs y las 21:00 hrs, de lunes a viernes y sábados de 9:00 hrs a 13:00 hrs (dependiendo el código postal).</p>
+                        </div>
+                    </div>
+                    <div class="container warranty">
+                        <span class="close-warranty"></span>
+                        <div class="warranty-info">
+                            <h2>Garantía</h2>
+                            <p>autoparteschavez.com garantiza el buen funcionamiento de todos sus productos. Cada producto especifica su tiempo de garantía correspondiente en la sección de especificaciones.</p>
+                            <p>Para que una garantía pueda proceder el producto no deberá presentar daños externos e internos por una mala instalación como: rastros de agua o humedad, cortes o mutilaciones, cables trozados, empalmes, rastros de adhesivos, modificaciones u otro tipo de daño causado por mal uso y/o Instalación.</p>
+                            <p>En todos los casos, es decir, todas las ventas de productos, se incluye nota de remisión y/o factura. Sin excepción de persona y género deberá de presentarse dicha nota o factura para cualquier aclaración o reclamación. La nota de venta o factura no deberá de presentar daño y tendrá que ser legible. Algunos productos incluyen número de serie, el cual no deberá ser violado y tendrá que coincidir con su nota o factura, de lo contrario no procederá la garantía.</p>    
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <img src="../assets/logos/smalls/Logo AC Blanco.png" alt="logo-white">
+                <p>&copy; Derechos Reservados Autopartes Chávez</p>
+            </div>
+        </nav>
+    </footer>
+    <script src="../scripts/header.js"></script>
+    <script src="../scripts/categorias.js"></script>
+    <script src="../scripts/footer.js"></script>
+</body>
+</html>
+

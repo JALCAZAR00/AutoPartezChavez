@@ -1,0 +1,120 @@
+$--primary-color: #0b3850;
+$--secondary-color: #a00a3a;
+$--alternative-color: #fff;
+
+@mixin backgroundImage{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@mixin styles{
+    background: linear-gradient(120deg, #0b3850, #a00a39e3);//#000000d3
+}
+//Clases Generales
+.inactive{
+    display: none !important;
+}
+.dark-theme{
+    background: linear-gradient(120deg,#0b3850, #000);
+    color: white;
+    .logo_img{
+        content: url(./assets/dark-theme/LogoAutopartesChavezBlanco.png);
+    }
+    .toggle-menu{
+        color: #000;
+        backdrop-filter: blur(5.5px);
+        -webkit-backdrop-filter: blur(55.5px);
+        box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+        background: rgba(255, 255, 255, 0.70);
+        .category{
+            color: #444444;
+            font-weight: 600;
+        }
+    }
+    .short-logo{
+        content: url(./assets/dark-theme/LogoACBlanco.png);
+    }
+    .search{
+        img{
+            content: url('./assets/dark-theme/search-white.svg');
+        }
+    }
+    .cart{
+        img{
+            content: url('./assets/dark-theme/cart-white.svg');
+        }
+    }
+    .cart-products{
+        color: black;
+        backdrop-filter: blur(5.5px);
+        -webkit-backdrop-filter: blur(55.5px);
+        box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+        background: rgba(255, 255, 255, 0.70);
+        h3{
+            color: #3f3f3f;
+        }
+        .product-info{
+            h3{
+                font-weight: 700;
+            }
+        }
+    }
+}
+.rotate{
+    transform: rotate(180deg);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+    //font-family: 'Ubuntu', sans-serif;
+}
+
+.float-whatsapp{
+    position: fixed;
+    bottom: 1vh;
+    right: 1vw;
+    z-index: 1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    background-color: #55cd6c;
+    border-radius: 4em;
+    img{
+        width: 45px;
+        height: 45px;
+    }
+}
+
+.modal{
+    position: fixed;
+    bottom: 1vh;
+    left: 1vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 325px;
+    height: 50px;
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px #000;
+    p{
+        color: #ffffff;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    span{
+        display: flex;
+        width: 25px;
+        height: 25px;
+        background-image: url('../assets/vectors/check.svg');
+        @include backgroundImage();
+    }
+}

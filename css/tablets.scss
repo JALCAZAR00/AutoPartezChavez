@@ -1,0 +1,292 @@
+@media screen and (min-width: 768px) {
+    .float-whatsapp{
+        width: 80px;
+        height: 80px;
+        img{
+            width: 55px;
+            height: 55px;
+        }
+    }
+    .menu{
+        display: none;
+    }
+
+    header{
+        background-color: #e2e3e6;
+        box-shadow: 0 2px 2px #808080e1;
+        nav{
+            justify-content: center;
+            min-width: 100%;
+            height: 75px;
+            max-height: 80px;
+            margin: 0;
+            padding: 12px 24px;
+            background-color: white;
+            box-shadow: 0 2px 2px #c2c2c275;
+            .menu_icon{
+                display: none;
+            }
+            .logo{
+                min-width: 75%;
+                img{
+                    width: 180px;
+                    height: 60px;
+                }
+            }  
+            .navegation{
+                max-width: 240px;
+                div{
+                    width: 30%;
+                    height: 100%;
+                    img{
+                        width: 40px;
+                        height: 40px;
+                    }
+                    p{
+                        font-size: 1.3rem;
+                    }
+                    .count{
+                        width: 20px;
+                        height: 20px;
+                        left: 22px;
+                        top: -6px;
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+            .searchActivate{
+                display: flex;
+                top: 2vh;
+                right: 25vw;
+                width: 45%;
+                height: 55px;
+                label{
+                    right: 1.5vw;
+                    width: 25px;
+                    height: 25px;
+                }
+                input{
+                    height: 6.5vh;
+                    font-size: 1.6rem;
+                }
+                .searchClose{
+                    right: 2vw;
+                }
+            }
+            .cart-products{
+                .products{
+                    height: 55vh;
+                }
+            }
+        }
+        .list-nav{
+            position: relative;
+            display: flex;
+            height: 32px;
+            background-color: #a00a3a;
+            box-shadow: 0 2px 2px #808080e1;
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                width: 100%;
+                list-style: none;
+                li{
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                    padding: 2px 6px;
+                    cursor: pointer;
+                    border-radius: .2em;
+                    border: 1px solid #a00a3a;
+                    span{
+                        display: inherit;
+                        width: 15px;
+                        height: 15px;
+                        background-image: url('../assets/vectors/arrow_down.svg');
+                        @include backgroundImage();
+                    }
+                    a{
+                        text-decoration: none;
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        color: #ffffff;
+                    }
+                }
+                li:hover{
+                    padding: 2px 6px;
+                    border-radius: .2em;
+                    border: 1px solid #ffffff;
+                }
+            }
+        }
+        #categoryDesktop{
+            position: absolute;
+            top: 32px;
+            left: 0;
+            z-index: 1;
+            display: block;
+            height: 240px;
+            width: 60%;
+            padding: 16px 12px;
+            overflow: hidden;
+            background-color: #1e1e1e;
+            border-radius: 0 .2em .2em 0 ;
+            ul{
+                font-size: 1.4rem;
+                display: grid;
+                gap: 16px;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                li{
+                    border: 1px solid #1e1e1e;
+                    height: 30px;
+                    a{
+                        text-decoration: none;
+                        font-size: 1.4rem;
+                        font-weight: 600;
+                        color: #ffffff;
+                    }
+                }
+                li:hover{
+                    border: 1px solid #ffffff;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    main{
+        .carrusel{
+            img{
+                height: 340px;
+            }
+        }
+
+        .eslogan{
+            h1{
+                font-size: 1.8rem;
+            }
+        }
+
+        .cards-category{
+            height: 180px;
+            gap: 16px;
+            .card{
+                width: 160px;
+                height: 160px;
+                .image{
+                    img{
+                        width: 80px;
+                        height: 60px;
+                    }    
+                }
+                .info{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    p{
+                        font-size: 1.6rem;
+                    }    
+                }
+                
+            }
+        }
+
+        .banner{
+            img{
+                height: 20vh;
+            }
+        }
+
+        .products{
+            #inicio{
+                height: 400px;
+                h2{
+                    font-size: 2.2rem;
+                }  
+                .store{
+                    width: 100%;
+                    height: auto;
+                    .store-item{
+                        gap: 6px;
+                        min-width: 250px;
+                        height: 310px;
+                        .image{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: flex-end;
+                            height: 55%;
+                            gap: 6px;
+                            img{
+                                width: 80px;
+                                height: 130px;
+                            }
+                            p{
+                                font-size: 1.8rem;
+                                color: #111111;
+                            }
+                        }
+                        .info{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 6px;
+                            height: 30%;
+                            gap: 6px;
+                            h2{
+                                color: #000;
+                                text-transform: uppercase;
+                            }
+                            h3{
+                                display: flex;
+                            }    
+                        }
+                        .btn{
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: center;
+                        }
+                    }  
+                }
+
+                .controls{
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    footer{
+        nav{
+            .social{
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+                .whatsapp{
+                    width: 37px;
+                    height: 37px;
+                }
+            }
+
+            .footer-nav{
+                ul{
+                    font-size: 1.6rem;
+                }
+            }
+
+            .footer-logo{
+                img{
+                    width: 60px;
+                    height: 40px;
+                }
+                p{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
