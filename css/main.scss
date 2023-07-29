@@ -181,7 +181,7 @@ main{
     .products{
         padding-bottom: 12px;
         background-color: #e7e9ec;
-        #inicio{
+        #inicio, .inicio{
             background-color: white;
             backdrop-filter: blur(6px);
             box-shadow: 0 0 5px #808080e1;
@@ -208,7 +208,7 @@ main{
                     border: 1px solid #c2c2c2;
                     box-shadow: -4px 4px 2px #c2c2c2;
                     img{
-                        width: 60px;
+                        width: 35vw;
                         height: 110px;
                     }
                     p{

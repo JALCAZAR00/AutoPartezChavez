@@ -13,13 +13,10 @@
         width: 100%;
         margin-bottom: 24px;
         border-radius: .1em;
-        background-color: #1e1e1ee8;
-        backdrop-filter: blur(6px);
-        -webkit-backdrop-filter: blur(55.5px);
         h1{
             padding: 32px 0 0 0;
             font-size: 2.2rem;
-            color: #ffffff;
+            color: #000;
         }
         ul{
             display: flex;
@@ -113,6 +110,7 @@
                     color: white;
                     border-radius: .2em;
                     background-color: #a00a3a;
+                    text-shadow: none;
                 }
             }
         }

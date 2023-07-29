@@ -2,7 +2,7 @@
 const productos = [
     { 
       id: 1, 
-      img: 'https://i.postimg.cc/h4H3Pf0K/01.png', 
+      img: 'https://i.postimg.cc/fTs7t7bW/aceite.png', 
       nombre: 'Aceite MOBIL 20W-50 946ml', 
       descripcion: 'Aceite para motor a gasolina MOBIL 20W-50 mineral TRC-PRO 946ml', 
       precio: 169,
@@ -10,7 +10,7 @@ const productos = [
     },
     { 
       id: 2, 
-      img: 'https://i.postimg.cc/FsPqXNK4/02.webp', 
+      img: 'https://i.postimg.cc/PfYz5VTF/arnes.png', 
       nombre: 'Shampoo para auto MAGREY 1L', 
       descripcion: 'Shampo con cera para auto MAGREY 1L', 
       precio: 65,
@@ -18,14 +18,15 @@ const productos = [
     },
     { 
       id: 3, 
-      img: 'https://i.postimg.cc/q7KZKKxJ/03.webp', 
+      img: 'https://i.postimg.cc/nc14vss4/marcha.png', 
       nombre: 'Trapo de microfibra', 
       descripcion: 'Trapo de microfibra color rojo medidas 50x50cm', 
       precio: 169,
       cantidad: 0
     },
 ];
-  
+
+// Obtener elementos del DOM
 const contenedor = document.querySelector('.store-container');
 const contenedorProductos = document.querySelector('.store');
 const carritoContainer = document.querySelector('.cart-products');
@@ -33,6 +34,7 @@ const carritoProductos = document.querySelector('.products');
 const subTotalPrecio = document.querySelector('.subtotal-precio');  
 const totalPrecio = document.querySelector('.total-precio');
 
+const modalCarrito = document.querySelector('.modal');
 
   
 // Mostrar los productos en el DOM
@@ -56,7 +58,7 @@ function agregarProductos(){
       contenedorProductos.appendChild(productoElement);
     }
 }
-  
+
 // Función para actualizar el carrito
 function actualizarCarrito() {
     carritoProductos.innerHTML = '';
@@ -88,6 +90,25 @@ function actualizarCarrito() {
     }
     subTotalPrecio.textContent = `$${total}`;
     totalPrecio.textContent = `$${total}`;
+
+    // Guardar carrito en localStorage
+    localStorage.setItem('carrito', JSON.stringify(productos));
+}
+
+// Función para cargar el carrito desde localStorage
+function cargarCarritoDesdeLocalStorage() {
+    const carrito = localStorage.getItem('carrito');
+    if (carrito) {
+        const carritoParsed = JSON.parse(carrito);
+        for (const producto of productos) {
+            const productoEnCarrito = carritoParsed.find(p => p.id === producto.id);
+            if (productoEnCarrito) {
+                producto.cantidad = productoEnCarrito.cantidad;
+            }
+        }
+        actualizarCarrito();
+        mostrarSumaProductos();
+    }
 }
 
 // Función para mostrar la suma de todos los productos
@@ -99,10 +120,24 @@ function mostrarSumaProductos() {
     sumaElement.textContent = cantidadProductos;
 }
 
+function mostrarModalPorTiempo(tiempo) {
+  modalCarrito.style.display = 'flex';
+  setTimeout(function() {
+    modalCarrito.style.display = 'none';
+  }, tiempo);
+}
+
 // Función para inicializar la aplicación
 function init() {
   agregarProductos();
+  cargarCarritoDesdeLocalStorage(); // Cargar carrito desde localStorage
 }
+
+//Evento para cargar el carrito
+document.addEventListener('DOMContentLoaded', () => {
+  cargarCarritoDesdeLocalStorage();
+});
+
 // Evento click en el botón "Agregar al carrito"
 contenedorProductos.addEventListener('click', (event) => {
   if (event.target.classList.contains('agregar')) {
@@ -112,6 +147,7 @@ contenedorProductos.addEventListener('click', (event) => {
       producto.cantidad++;
       actualizarCarrito();
       mostrarSumaProductos();
+      mostrarModalPorTiempo(1500);
     }
   }
 });

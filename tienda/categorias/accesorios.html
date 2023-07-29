@@ -135,133 +135,18 @@
     <main id="main_productos">
         <section class="tienda">
             <div class="subcategorias">
-                <div class="accesorios">
-                    <h2>Accesorios</h2>
-                        <ul>
-                            <li id="categoria_uno"><p>Accesorios1</p></li>
-                            <li id="categoria_dos"><p>Accesorios2</p></li>
-                            <li id="categoria_tres"><p>Accesorios3</p></li>
-                            <li id="categoria_cuatro"><p>Accesorios4</p></li>
-                            <li id="categoria_cinco"><p>Accesorios5</p></li>
-                            <li id="categoria_seis"><p>Accesorios6</p></li>
-                            <li id="categoria_siete"><p>Accesorios7</p></li>
-                            <li id="categoria_ocho"><p>Accesorios8</p></li>
-                        </ul>
-                </div>
             </div>
-            <section class="categorias_todos">
-                <div class="categoria_uno inactive">
-                    <section class="products">
+            <section class="products">
                         <div class="store-container" id="inicio">
-                            <h2>Accesorios Uno</h2>
+                            <h2>Accesorios</h2>
                                 <div class="controls right" id="arrowRight"><img src="../../assets/vectors/arrow-right-blue.svg" alt="arrow-right"></div>
                                 <div class="controls left" id="arrowLeft"><img src="../../assets/vectors/arrow-left-blue.svg" alt="arrow-left"></div>                
                             <div class="store">
                             </div>
                         </div>
                     </section>
-                </div>
-                <div class="categoria_dos inactive">
-                    <section class="products">
-                        <div class="store-container" id="inicio">
-                            <h2>Accesorios Dos</h2>
-                                <div class="controls right" id="arrowRight"><img src="../../assets/vectors/arrow-right-blue.svg" alt="arrow-right"></div>
-                                <div class="controls left" id="arrowLeft"><img src="../../assets/vectors/arrow-left-blue.svg" alt="arrow-left"></div>                
-                            <div class="store">
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="categoria_tres inactive">
-                    <section class="products">
-                        <div class="store-container" id="inicio">
-                            <h2>Accesorios Tres</h2>
-                                <div class="controls right" id="arrowRight"><img src="../../assets/vectors/arrow-right-blue.svg" alt="arrow-right"></div>
-                                <div class="controls left" id="arrowLeft"><img src="../../assets/vectors/arrow-left-blue.svg" alt="arrow-left"></div>                
-                            <div class="store">
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="categoria_cuatro inactive">
-                    <section class="products">
-                        <div class="store-container" id="inicio">
-                            <h2>Accesorios Cuatro</h2>
-                                <div class="controls right" id="arrowRight"><img src="../../assets/vectors/arrow-right-blue.svg" alt="arrow-right"></div>
-                                <div class="controls left" id="arrowLeft"><img src="../../assets/vectors/arrow-left-blue.svg" alt="arrow-left"></div>                
-                            <div class="store">
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="categoria_cinco inactive">
-                    <section class="products">
-                        <div class="store-container" id="inicio">
-                            <h2>Accesorios Cinco</h2>
-                                <div class="controls right" id="arrowRight"><img src="../../assets/vectors/arrow-right-blue.svg" alt="arrow-right"></div>
-                                <div class="controls left" id="arrowLeft"><img src="../../assets/vectors/arrow-left-blue.svg" alt="arrow-left"></div>                
-                            <div class="store">
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="categoria_seis inactive">
-                    <section class="products">
-                        <div class="store-container" id="inicio">
-                            <h2>Accesorios Seis</h2>
-                                <div class="controls right" id="arrowRight"><img src="../../assets/vectors/arrow-right-blue.svg" alt="arrow-right"></div>
-                                <div class="controls left" id="arrowLeft"><img src="../../assets/vectors/arrow-left-blue.svg" alt="arrow-left"></div>                
-                            <div class="store">
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="categoria_siete inactive">
-                    <section class="products">
-                        <div class="store-container" id="inicio">
-                            <h2>Accesorios Siete</h2>
-                                <div class="controls right" id="arrowRight"><img src="../../assets/vectors/arrow-right-blue.svg" alt="arrow-right"></div>
-                                <div class="controls left" id="arrowLeft"><img src="../../assets/vectors/arrow-left-blue.svg" alt="arrow-left"></div>                
-                            <div class="store">
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="categoria_ocho inactive">
-                    <section class="products">
-                        <div class="store-container" id="inicio">
-                            <h2>Accesorios Ocho</h2>
-                                <div class="controls right" id="arrowRight"><img src="../../assets/vectors/arrow-right-blue.svg" alt="arrow-right"></div>
-                                <div class="controls left" id="arrowLeft"><img src="../../assets/vectors/arrow-left-blue.svg" alt="arrow-left"></div>                
-                            <div class="store">
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </section>    
         </section>
     </main>
-    <script>
-        const btnCategoria = document.getElementById('categoria_uno').addEventListener("click", openCategoriaUno);
-        const btnCategoria2 = document.getElementById('categoria_dos').addEventListener("click", openCategoriaDos);
-        
-        function openCategoriaUno(){
-            const categoria = document.querySelector('.categoria_uno')
-            categoria.classList.remove('inactive');    
-        }
-        function closeCategoriaUno(){
-            const categoria = document.querySelector('.categoria_uno')
-            categoria.classList.add('inactive');
-        }
-         function openCategoriaDos(){
-             const categoria = document.querySelector('.categoria_dos')
-             categoria.classList.remove('inactive');
-             closeCategoriaUno();    
-         }
-         function closeCategoriaDos(){
-             categoria.classList.add('inactive');
-         }
-    </script>
 
     <script src="../../scripts/header.js"></script>
     <script src="../../scripts/productsCarrito.js"></script>
