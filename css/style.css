@@ -149,8 +149,8 @@ header nav .menu {
   max-width: 50px;
 }
 header nav .menu .menu_icon {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   border: 1px solid #808080;
   border-radius: 0.5em;
   cursor: pointer;
@@ -167,6 +167,7 @@ header nav .logo {
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: 45%;
+  padding-left: 12px;
 }
 header nav .logo img {
   width: 140px;
@@ -349,8 +350,9 @@ header .cart-products .products .product .product-img {
   text-align: center;
 }
 header .cart-products .products .product .product-img img {
-  width: 40px;
+  width: 100%;
   height: 65px;
+  border-radius: 0.5em;
 }
 header .cart-products .products .product .product-info {
   width: 70%;
@@ -395,7 +397,7 @@ header .cart-products .products .product .product-quantity button {
   height: 20px;
   width: 20px;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: white;
   border-radius: 0.5em;
   border: 1px solid #a00a3a;
@@ -476,11 +478,11 @@ header .cart-products .resume .total {
 }
 header .cart-products .resume button {
   width: 250px;
-  height: 32px;
+  height: 35px;
   margin: 0 auto;
   border-radius: 0.5em;
   border: none;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   color: white;
   cursor: pointer;
   background-color: #a00a3a;
@@ -509,18 +511,18 @@ header .searchActivate input {
   text-align: start;
   width: 60vw;
   height: 5vh;
-  padding: 4px 6px;
+  padding: 8px 12px 6px;
   border-radius: 0.5em;
   background-color: white;
   border: 1px solid #808080;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 header .searchActivate label {
   position: absolute;
   right: 4vw;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   margin-left: 0.4em;
   cursor: pointer;
   background-image: url("../assets/vectors/close-red.svg");
@@ -576,10 +578,9 @@ header .toggle-menu .categories ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  gap: 24px;
   max-height: 80vh;
-  padding: 0 12px;
-  font-size: 1.6rem;
+  padding: 24px 12px;
   font-weight: bold;
   list-style: none;
   overflow-y: scroll;
@@ -594,8 +595,7 @@ header .toggle-menu .categories ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 32px;
-  height: 35px;
+  height: 40px;
   padding: 2px 6px;
   background-color: rgba(169, 169, 169, 0.5607843137);
   border-radius: 0.2em;
@@ -648,14 +648,24 @@ header .toggle-menu #category ul {
 }
 header .toggle-menu #category ul li {
   min-height: 30px;
-  font-size: 1.4rem;
   font-weight: 500;
-  background-color: #eeeeee;
-  padding: 2px;
+  background-color: #dbdbdb;
+  padding: 0;
+  text-align: center;
 }
 header .toggle-menu #category ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  font-size: 1.3rem;
+  height: 100%;
+  font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 0.5px;
   color: #121212;
@@ -777,8 +787,10 @@ main .eslogan {
 main .eslogan h1 {
   width: 98%;
   text-align: center;
-  font-size: 1.4rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.6rem;
   font-weight: 600;
+  letter-spacing: 0.5px;
   text-shadow: -2px 2px 6px #000000;
 }
 main .cards-category {
@@ -849,6 +861,7 @@ main .cards-category .card .info {
   height: 40%;
 }
 main .cards-category .card .info p {
+  font-family: "Ubuntu", sans-serif;
   color: #000000;
   font-size: 1.3rem;
   font-weight: 600;
@@ -972,6 +985,7 @@ main .products #inicio, main .products .inicio {
 main .products #inicio h2, main .products .inicio h2 {
   font-size: 2rem;
   color: #0b3850;
+  text-transform: uppercase;
   text-shadow: 0 1px 2px #808080;
 }
 main .products #inicio .store, main .products .inicio .store {
@@ -1595,25 +1609,37 @@ footer nav .navs-container .container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  gap: 16px;
+  gap: 12px;
   width: 100%;
   height: 80vh;
-  padding: 12px 4px;
   border-radius: 0.5em;
-  border: 1px solid #808080;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(55.5px);
-  -webkit-box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
-          box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
-  background: rgba(153, 153, 153, 0.781);
+  background: #1e1e1e;
+  border: 1px solid #121212;
 }
-footer nav .navs-container .container span {
-  position: absolute;
-  top: 1vh;
-  right: 1vw;
+footer nav .navs-container .container .header {
+  width: 100%;
+  height: 8%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 12px;
+  background-color: rgba(128, 128, 128, 0);
+  -webkit-box-shadow: 0 2px 2px #121212;
+          box-shadow: 0 2px 2px #121212;
+}
+footer nav .navs-container .container .header h2 {
+  font-size: 1.8rem;
+  text-transform: initial;
+  color: white;
+}
+footer nav .navs-container .container .header span {
   display: inline-block;
   width: 35px;
   height: 35px;
@@ -1627,9 +1653,6 @@ footer nav .navs-container .container div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 4px;
 }
 footer nav .navs-container .container div img {
@@ -1637,78 +1660,125 @@ footer nav .navs-container .container div img {
   height: 24px;
 }
 footer nav .navs-container .container div h2 {
-  font-weight: 700;
-  text-transform: uppercase;
-}
-footer nav .navs-container .container div p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
+  letter-spacing: 0.5px;
+  color: white;
+  text-transform: initial;
 }
 footer nav .navs-container .contact {
   display: none;
 }
+footer nav .navs-container .contact .main {
+  height: 32%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 12px;
+}
+footer nav .navs-container .contact .map {
+  width: 100%;
+  height: 60%;
+}
+footer nav .navs-container .contact .map iframe {
+  width: 100%;
+}
 footer nav .navs-container .about {
   display: none;
+}
+footer nav .navs-container .about .main {
+  height: 80%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 32px;
-  overflow-y: scroll;
-  overscroll-behavior-y: contain;
-  -ms-scroll-snap-type: y proximity;
-      scroll-snap-type: y proximity;
+  padding: 0 6px;
 }
-footer nav .navs-container .about div {
+footer nav .navs-container .about .main div {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  color: white;
 }
-footer nav .navs-container .about div h2 {
-  font-size: 1.6rem;
+footer nav .navs-container .about .main div h2 {
+  font-size: 1.8rem;
   font-weight: 700;
+  text-transform: uppercase;
 }
-footer nav .navs-container .about div h3 {
+footer nav .navs-container .about .main div p {
   font-size: 1.6rem;
+  color: #c2c2c2;
+}
+footer nav .navs-container .about .logo {
+  width: 100%;
+  height: 12%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer nav .navs-container .about .logo img {
+  width: 45px;
+  height: 45px;
 }
 footer nav .navs-container .politics {
   display: none;
-  gap: 40px;
-  overflow-y: scroll;
-  overscroll-behavior-y: contain;
-  -ms-scroll-snap-type: y proximity;
-      scroll-snap-type: y proximity;
-  padding-top: 100px;
 }
-footer nav .navs-container .politics div {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-}
-footer nav .navs-container .politics div h2 {
-  font-size: 1.6rem;
-}
-footer nav .navs-container .warranty {
-  display: none;
-}
-footer nav .navs-container .warranty div {
+footer nav .navs-container .politics .main {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 16px;
+  padding: 4px 6px;
+  color: white;
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
+}
+footer nav .navs-container .politics .main div {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+footer nav .navs-container .politics .main div h2 {
+  font-size: 1.8rem;
+}
+footer nav .navs-container .politics .main div p {
+  font-size: 1.6rem;
+  color: #c2c2c2;
+}
+footer nav .navs-container .warranty {
+  display: none;
+}
+footer nav .navs-container .warranty .main {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  padding: 0 6px;
   text-align: center;
   overflow-y: scroll;
   overscroll-behavior-y: contain;
   -ms-scroll-snap-type: y proximity;
       scroll-snap-type: y proximity;
 }
-footer nav .navs-container .warranty div h2 {
+footer nav .navs-container .warranty .main p {
   font-size: 1.6rem;
+  color: #c2c2c2;
 }
 footer nav .footer-logo {
   width: 100%;
